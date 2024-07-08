@@ -1,0 +1,95 @@
+/* 
+Theme Name: Hello Elementor Child
+Theme URI: https://github.com/elementor/hello-theme-child/
+Description: Hello Elementor Child is a child theme of Hello Elementor, created by Elementor team
+Author: Elementor Team
+Author URI: https://elementor.com/
+Template: hello-elementor
+Version: 2.0.0
+Text Domain: hello-elementor-child
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+
+/* Add your custom styles here */
+
+:root {
+	--ns4u-accent-color: #EA1337;
+}
+
+/* Generic */
+.ns4u-overflow {
+  overflow: hidden;
+}
+
+.visuallyhidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+::selection {
+  background-color: var(--ns4u-accent-color);
+  color: #fff;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+input:focus::placeholder { color: transparent; }
+
+/* /Generic */
+
+/* Quantity Plus Minus Buttons */
+
+.quantity .qty {
+  border: none !important;
+  background-color: transparent !important;
+  width: 2rem !important;
+	text-align: center !important;
+}
+
+.quantity .qty:focus {
+  outline: 0;
+}
+
+.quantity button {
+  border-radius: 0 !important;
+  margin: 0 !important;
+  color: initial !important;
+  background-color: transparent !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+
+.quantity {
+  border: 1px solid #141414;
+  display: flex;
+}
+
+.cart .quantity {
+  width: fit-content;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Product Variations */
+.product table.variations tr>th,
+.product table.variations tr>td {
+  background-color: transparent;
+} 
+
+.product table.variations tr:hover>th,
+.product table.variations tr:hover>td {
+  background-color: transparent;
+} 
+
+.product table.variations th.label {
+  padding: 0;
+}
